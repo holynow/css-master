@@ -1,1 +1,1 @@
-nomadcode clone cssmaster
+Nomadcode SCSS MASTER

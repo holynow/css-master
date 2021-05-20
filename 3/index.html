@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ostrich</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<style>
+    .grid_wrap {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr)
+    }
+    .grid_wrap > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        font-weight: 700;
+    }
+    .box1 {
+        background: #dae7de;
+        color: #f34507;
+    }
+    .box2 {
+        background: #008a69;
+        color: #fdfefe;
+    }
+    .box3 {
+        background: #f44607;
+        color: #fdfaf9;
+    }
+    .box4 {
+        background: #f7abc5;
+        color: #f54710;
+    }
+    .box5 {
+        background: #5f5fa9;
+        color: #f8f8f8;
+    }
+    .box6 {
+        background: #ffc128;
+        color: #f54710;
+    }
+    .box7 {
+        background: #f97374;
+        color: #f8f8f8;
+    }
+    .box1,
+    .box2,
+    .box3 {
+        grid-column: span 2;
+        grid-row: span 2;
+        font-size: 40px;
+    }
+    .box4,
+    .box5,
+    .box6,
+    .box7 {
+        font-size: 20px;
+    }
+</style>
+<body>
+    <div class="grid_wrap">
+        <div class="box1">Ostrich</div>
+        <div class="box2">Ostrich</div>
+        <div class="box3">Ostrich</div>
+        <div class="box4">Ostrich</div>
+        <div class="box5">Ostrich</div>
+        <div class="box6">Ostrich</div>
+        <div class="box7">Ostrich</div>
+    </div>
+</body>
+</html>

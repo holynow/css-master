@@ -23,6 +23,21 @@
     font-weight: bold;
     font-size: 50px;
 }
+.info_area {
+    display: flex;
+    justify-content: space-between;
+}
+.info_area > * {
+    line-height: 20px;
+    flex: 1;   
+}
+.info_area ul + ul {
+    flex: 3;
+}
+.info_area a {
+    text-decoration: none;
+    color: #000;
+}
 .design_area {
     display: flex;
     flex-wrap: wrap;
@@ -39,6 +54,16 @@
 .circle:nth-child(2),
 .circle:nth-child(3) {
     background: #bbe1f0;
+}
+.circle:nth-child(4),
+.circle:nth-child(5),
+.circle:nth-child(6) {
+    background: tomato;
+}
+.circle:nth-child(7),
+.circle:nth-child(8),
+.circle:nth-child(9) {
+    background: peru;
 }
 .circle:nth-child(n+4) {
     margin-top: 40px;

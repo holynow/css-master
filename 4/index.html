@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foreword, Contributors</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../reset.css">
+</head>
+<style>
+    .wrapper {
+        text-align: center;
+    }
+    .content {
+        display: grid;
+        grid-template-columns: repeat(6, minmax(min-content, 1fr));
+        grid-template-rows: 10vh;
+        grid-auto-rows: 50vh;        
+    }
+    h1 {
+        font-size: 50px;
+        font-weight: 500;
+    }
+    .header {
+        grid-column: 1 / 7;
+    }
+    .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 15px;
+    }
+    .item span {
+        font-size: 13px;
+    }
+    .item:nth-child(2) {
+        background: #bfbda7;
+    }
+    .item:nth-child(3) {
+        background: url('https://source.unsplash.com/500x500/?nike');
+        background-size: cover;
+    }
+    .item:nth-child(4) {
+        background: #fe4814;
+    }
+    .item:nth-child(5) {
+        background: url('https://source.unsplash.com/500x500/?sea');
+        background-size: cover;
+    }
+    .item.item:nth-child(6) {
+        background: #847e96;
+    }
+    .item.item:nth-child(7) {
+        background: #d0ff71;
+    }
+    .item.item:nth-child(8) {
+        background: #993433;
+    }
+    .item.item:nth-child(9) {
+        background: #3aaafa;
+    }
+    .item:nth-child(10) {
+        background: url('https://source.unsplash.com/500x500/?Castle');
+        background-size: cover;
+    }
+    .item.item:nth-child(11) {
+        background: #41907a;
+    }
+    .item.item:nth-child(12) {
+        background: url('https://source.unsplash.com/500x500/?arts');
+        background-size: cover;
+    }
+    .item.item:nth-child(13) {
+        background: #e3c4e5;
+    }
+</style>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="header">
+                <h1>Foreword, Contributors</h1>
+            </div>
+            <div class="item">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <span>Lorem ipsum.</span>
+            </div>
+            <div class="item"></div>
+            <div class="item">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, nobis.</p>
+                <span>Lorem, ipsum dolor.</span>
+            </div>
+            <div class="item"></div>
+            <div class="item">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="item">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <span>Lorem, ipsum.</span>
+            </div>
+            <div class="item">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas dolor impedit totam?</p>
+                <span>Lorem.</span>
+            </div>
+            <div class="item">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <span>Lorem, ipsum.</span>
+            </div>
+            <div class="item"></div>
+            <div class="item">
+                <p>Lorem ipsum dolor. Rem, nobis.</p>
+                <span>Lorem, ipsum dolor.</span>
+            </div>
+            <div class="item"></div>
+            <div class="item">
+                <p>Lorem ipsum dolor.</p>
+                <span>Lorem.</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

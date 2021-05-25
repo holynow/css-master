@@ -1,0 +1,205 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curry Cafe</title>
+</head>
+<body>
+    <style>
+        html,body,div,p,a,span,ul,li {margin: 0;padding: 0;text-transform: uppercase; box-sizing: border-box; font-style: italic;}
+        li {list-style: none;}
+        a {text-decoration: none; color: inherit;}
+        i {font-style: unset;}
+        .layout {
+            display: grid;
+            grid-template-columns: 60px auto 60px ;
+            grid-template-rows: 1fr 7fr 1fr 5fr 2fr 1fr;
+            height: 100%;
+            width: 100%;
+            border: 15px solid #eee852;
+        }
+        .article {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-column: span 3;
+            border: 5px solid #fd6b3a;
+            font-weight: bold;
+            color: #fd6b3a;
+            overflow: hidden;
+            font-size: 20px;
+            white-space: nowrap;
+        }
+        .navi {
+            grid-column-start: 1;
+            grid-row-start: 2;
+            grid-row: 2/4;
+            background: #fd6b3a;
+            font-weight: bold;
+            color: #fff;
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+        }
+        .navi ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            font-weight: bold;
+            letter-spacing: 5;
+        }
+        .news {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-column-start: 1;
+            grid-row-start: 4;
+            border: 5px solid #fd6b3a;
+            border-top: none;
+            border-bottom: none;
+            font-weight: bold;
+            color: #fd6b3a;
+            font-size: 20px;
+        }
+        .news p {
+            writing-mode: vertical-lr;
+            transform: rotate(-180deg);
+        }
+        .sns {
+            grid-column-start: 1;
+            grid-row-start: 5;
+            grid-row: 5 span 1;
+            border: 5px solid #fd6b3a;
+            border-bottom: 0;
+        }
+        .sns ul {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .sns ul li {
+            text-align: center;
+            min-width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 2px;
+            background-color: #fd6b3a;
+            color: #fff;
+            font-weight: bold;
+        }
+        .sns ul li a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .sns ul li i {
+            font-style: normal;
+        }
+        .sns ul li + li {
+            margin-top: 10px;
+        }
+        .reservation,
+        .order {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-column-start: 3;
+            background: #46ab4f;
+            border: 5px solid #fd6b3a;
+            border-top: none;
+            font-weight: bold;
+            color: #fff;
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+            letter-spacing: 5;
+        }
+        .reservation {
+            grid-row: span 3;
+            border-bottom: none;
+        }
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-column-start: 2;
+            grid-row-start: 2;
+            grid-row: 2/6;
+            background: url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1357&q=80');
+            background-size: cover;
+            line-height: 0.9;
+            font-size: 70px;
+            text-align: center;
+            color: #fff;
+        }
+        .main h1 {
+            font-style: normal;
+        }
+        .message {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: #fd6b3a;
+            border-radius: 5px;
+            bottom: 5%;
+            right: 3%;
+            -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.44); 
+            box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.44);
+        }
+        .message button {
+            border: none;
+            font-weight: bold;
+            font-size: 30px;
+            color: #fff;
+            background: none;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    </style>
+    <div class="wrapper">
+        <div class="layout">
+            <div class="article">
+                <p>CURRY CAFE! FLEMINGTON & NORTHCOTE! NUMBER ONE BEST QUALITY! VEG & NOW. VEG! CURRY CAFE! CURRY CAFE! FLEMINGTON & NORTHCOTE! NUMBER ONE BEST QUALITY! VEG & NOW. VEG! CURRY CAFE!</p>
+            </div>
+            <div class="navi">
+                <ul>
+                    <li><a href="#none">locations</a></li>
+                    <li><a href="#none">menu</a></li>
+                    <li><a href="#none">shop</a></li>
+                </ul>
+            </div>
+            <div class="news">
+                <p><a href="#none">spicy newslette</a>r</p>
+            </div>
+            <div class="sns">
+                <ul>
+                    <li><a href="#none"><i class="facebook">f</i></a></li>
+                    <li><a href="#none"><i class="instagram">i</i></a></li>
+                </ul>
+            </div>
+            <div class="order">
+                <p><a href="#none">order t - a</a></p>
+            </div>
+            <div class="reservation">
+                <p><a href="#none">reservations</a></p>
+            </div>
+            <div class="main">
+                <div class="title">
+                    <h1>curry<br>cafe</h1>
+                </div>
+            </div>
+            <div class="article bottom">
+                <p>CURRY CAFE! FLEMINGTON & NORTHCOTE! NUMBER ONE BEST QUALITY! VEG & NOW. VEG! CURRY CAFE! CURRY CAFE! FLEMINGTON & NORTHCOTE! NUMBER ONE BEST QUALITY! VEG & NOW. VEG! CURRY CAFE!</p>
+            </div>
+            <div class="message">
+                <button type="button">m</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

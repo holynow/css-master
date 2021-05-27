@@ -1,0 +1,199 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html,body,div,p,span,a,select,option,ul,li {margin: 0; padding:0;box-sizing: border-box;}
+    li {list-style: none;}
+    a {color:inherit;}
+    .select_wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 4px solid #000;
+        border-left: 0;
+        border-right: 0;
+    }
+    .select_wrap select {
+        position: relative;
+        flex: 1;
+        padding: 8px 10px;
+        border: none;
+        appearance: none;
+        background-image:
+        linear-gradient(45deg, transparent 50%, black 50%),
+        linear-gradient(135deg, black 50%, transparent 50%);
+        background-position:
+            calc(100% - 15px) calc(1em + 2px),
+            calc(100% - 10px) calc(1em + 2px),
+            100% 0;
+        background-size:
+            5px 5px,
+            5px 5px,
+            2.5em 2.5em;
+        background-repeat: no-repeat;
+    }
+    .select_wrap select + select {
+        border-left: 4px solid #000;
+    }
+    .work_list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .work_list .item {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 20px 3fr 20px;
+        padding: 15px;
+        border-bottom: 4px solid #000;
+        border-right: 4px solid #000;
+    }
+    .work_list .item:nth-child(3n) {
+        border-right: 0;
+    }
+    .item .work img {
+        width: 100%;
+    }
+    .item .year {
+        grid-row: 3;
+    }
+    .item .more {
+        grid-row: 3;
+        text-align: right;
+    }
+    .item .programme {
+        text-align: right;
+    }
+    .item .work {
+        grid-area: 2 / span 2;
+        width: 100%;
+        padding: 20px 30px;
+        margin: 0 auto;
+    }
+</style>
+<body>
+    <div id="wrapper">
+        <div class="select_wrap">
+            <select name="year" id="year">
+                <option>Year: All</option>
+            </select>
+            <select name="programme" id="programme">
+                <option>Programme: All</option>
+            </select>
+            <select name="Themes" id="Themes">
+                <option>Themes: All</option>
+            </select>
+            <select name="practice" id="practice">
+                <option>Practice: All</option>
+            </select>
+            <select name="students" id="students">
+                <option>Students</option>
+            </select>
+        </div>
+        <ul class="work_list">
+            <li class="item">
+                <span class="students">Kate Bedford</span>
+                <span class="programme">PGDIPFA</span>
+                <span class="year">2016</span>
+                <span class="more">
+                    <a href="#none">Read more</a>
+                </span>
+                <div class="work">
+                    <img src="https://source.unsplash.com/800x500/?art">
+                </div>
+            </li>
+            <li class="item">
+                <span class="students">Patricia Ramos</span>
+                <span class="programme">BFA(HONS)</span>
+                <span class="year">2016</span>
+                <span class="more">
+                    <a href="#none">Read more</a>
+                </span>
+                <div class="work">
+                    <img src="https://source.unsplash.com/800x500/?photo">
+                </div>
+            </li>
+            <li class="item">
+                <span class="students">Trevor Newman</span>
+                <span class="programme">MFA</span>
+                <span class="year">2016</span>
+                <span class="more">
+                    <a href="#none">Read more</a>
+                </span>
+                <div class="work">
+                    <img src="https://source.unsplash.com/800x500/?wall">
+                </div>
+            </li>
+            <li class="item">
+                <span class="students">Kristina Leggett</span>
+                <span class="programme">BFA(HONS)</span>
+                <span class="year">2016</span>
+                <span class="more">
+                    <a href="#none">Read more</a>
+                </span>
+                <div class="work">
+                    <img src="https://source.unsplash.com/800x500/?stone">
+                </div>
+            </li>
+            <li class="item">
+                <span class="students">JoAnne Raill</span>
+                <span class="programme">PGDIPFA</span>
+                <span class="year">2016</span>
+                <span class="more">
+                    <a href="#none">Read more</a>
+                </span>
+                <div class="work">
+                    <img src="https://source.unsplash.com/800x500/?human">
+                </div>
+            </li>
+            <li class="item">
+                <span class="students">Emma Chalmers</span>
+                <span class="programme">MFA</span>
+                <span class="year">2016</span>
+                <span class="more">
+                    <a href="#none">Read more</a>
+                </span>
+                <div class="work">
+                    <img src="https://source.unsplash.com/800x500/?creation">
+                </div>
+            </li>
+            <li class="item">
+                <span class="students">Wendelien Bakker</span>
+                <span class="programme">MFA</span>
+                <span class="year">2016</span>
+                <span class="more">
+                    <a href="#none">Read more</a>
+                </span>
+                <div class="work">
+                    <img src="https://source.unsplash.com/800x500/?gray">
+                </div>
+            </li>
+            <li class="item">
+                <span class="students">Mariadelle Gamit</span>
+                <span class="programme">BFA(HONS)</span>
+                <span class="year">2016</span>
+                <span class="more">
+                    <a href="#none">Read more</a>
+                </span>
+                <div class="work">
+                    <img src="https://source.unsplash.com/800x500/?city">
+                </div>
+            </li>
+            <li class="item">
+                <span class="students">Tullia Pye</span>
+                <span class="programme">BFA</span>
+                <span class="year">2016</span>
+                <span class="more">
+                    <a href="#none">Read more</a>
+                </span>
+                <div class="work">
+                    <img src="https://source.unsplash.com/800x500/?forest">
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

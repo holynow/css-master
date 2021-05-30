@@ -1,0 +1,281 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html,body,div,p,span,a,ul,li {margin: 0; left: 0; }
+a {color: inherit; text-decoration: none;}
+.wrap{
+    display: grid;
+    grid-template-columns: minmax(auto, 850px) 
+    minmax(auto, 50px) 
+    minmax(auto, 690px);
+    height: 100vh;
+}
+.main {
+    display: grid;
+    grid-template-rows: repeat(auto-fit);
+    background: #ff6800; padding: 10px; height: 100vh;
+    }
+.item {
+    display: grid;
+    grid-template-columns: 40px minmax(auto, 7fr) 200px;
+    grid-gap: 0;
+    border-top: 2px solid #ff0000;
+    border-right: 2px solid #ff0000;
+    align-items: center;
+    color: #ff0000;
+}
+.item:last-child{border-bottom:2px solid #ff0000;}
+.item > div {border-left: 2px solid #ff0000; height: 100%;}
+.item .cate { display: flex; align-items: center; justify-content: center;}
+.cate p {writing-mode: vertical-lr; transform: rotate(-180deg);}
+.item .tit {display: flex; align-items: center; padding: 0 20px; font-size: 80px; font-weight: bold; letter-spacing: -0.07em; white-space: nowrap; }
+.item .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item .info > div {display: flex; justify-content: center; align-items: center; flex: 1;}
+.item .info .link {width: 100%; padding: 0 20px; border-top: 2px solid #ff0000;}
+.item .info .link a {background: #ff0000; display: block; height: 45px; border-radius: 30px; width: 240px; line-height: 45px; color: #ff6800; text-align: center;}
+.side p {display: flex;align-items: center; background: #ff00ff; width: 100%; height: 50%; writing-mode: vertical-lr; font-weight: bold; font-size: 20px; padding: 20px 0;}
+.side p + p {
+    position: relative;
+    background: #160bff; 
+    justify-content: flex-start; 
+    transform: rotate(-180deg);
+}
+.side p + p:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    width: 60px;
+    height: 60px;
+    background: url('./ico_flower.png') no-repeat;
+    background-size: 100%;
+}
+.side p + p > span {transform: rotate(90deg);}
+.article {background: #ff0000; padding: 20px;}
+.adverti ul {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    margin-top: 20px;
+    height: 100%;
+}
+.adverti ul li {
+    padding: 20px 0; 
+    border-top: 1px solid #000; 
+}
+.adverti strong {font-size: 25px; font-weight: bold;}
+.adverti p {font-size: 14px;}
+.radio_btn {
+    display: flex; 
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 25px;
+}
+input[type='radio'],
+input[type='radio']:checked {
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  margin-right: 0.1rem;
+}
+input[type='radio'] {
+  border: 2px solid #000;
+}
+input[type='radio']:checked {
+  background-color: #000;
+}
+.item:hover {border-color: #fff; color: #fff; border-bottom: 2px solid #fff;}
+.item:hover > div {border-color: #fff;}
+.item:hover .link {border-color: #fff;}
+.item:hover .link a {background: #fff;}
+    </style>
+    <div class="wrap">
+        <div class="main">
+            <div class="item">
+                <div class="cate"><p>E-Commerce</p></div>
+                <div class="tit"><p>UNIF</p></div>
+                <div class="info">
+                    <div class="skill">Design & Development</div>
+                    <div class="link">
+                        <a href="#none">2014 → Present</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="cate"><p>E-Commerce</p></div>
+                <div class="tit"><p>Veuve Clicquot</p></div>
+                <div class="info">
+                    <div class="skill">Design & Development</div>
+                    <div class="link">
+                        <a href="#none">2014 <span>→</span> Present</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="cate"><p>E-Commerce</p></div>
+                <div class="tit"><p>HAIM</p></div>
+                <div class="info">
+                    <div class="skill">Design & Development</div>
+                    <div class="link">
+                        <a href="#none">2014 <span>→</span> Present</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="cate"><p>E-Commerce</p></div>
+                <div class="tit"><p>MOCA</p></div>
+                <div class="info">
+                    <div class="skill">Design & Development</div>
+                    <div class="link">
+                        <a href="#none">2014 <span>→</span> Present</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="cate"><p>E-Commerce</p></div>
+                <div class="tit"><p>Public Access</p></div>
+                <div class="info">
+                    <div class="skill">Design & Development</div>
+                    <div class="link">
+                        <a href="#none">2014 <span>→</span> Present</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="cate"><p>E-Commerce</p></div>
+                <div class="tit"><p>Kelela</p></div>
+                <div class="info">
+                    <div class="skill">Design & Development</div>
+                    <div class="link">
+                        <a href="#none">2014 <span>→</span> Present</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="side">
+            <p>special - Offer, Inc.</p>
+            <p><span>©</span> 2014 → Forever</p>
+        </div>
+        <div class="article">
+            <div class="radio_btn">
+                <div class="btn_wrap">
+                    <input type="radio" name="radio" id="radio1">
+                    <label for="radio1">Information</label>
+                </div>
+                <div class="btn_wrap">
+                    <input type="radio" name="radio" id="radio2">
+                    <label for="radio2">Team</label>
+                </div>
+                <div class="btn_wrap">
+                    <input type="radio" name="radio" id="radio3">
+                    <label for="radio3">Press</label>
+                </div>
+            </div>
+            <div class="adverti">
+                <ul>
+                    <li>
+                        <strong>Art news</strong>
+                        <p>Performa Launches Online Platform for Streaming New and Archived Works</p>
+                    </li>
+                    <li>
+                        <strong>Art news</strong>
+                        <p>Performa Launches Online Platform for Streaming New and Archived Works</p>
+                    </li>
+                    <li>
+                        <strong>Art news</strong>
+                        <p>Performa Launches Online Platform for Streaming New and Archived Works</p>
+                    </li>
+                    <li>
+                        <strong>Art news</strong>
+                        <p>Performa Launches Online Platform for Streaming New and Archived Works</p>
+                    </li>
+                    <li>
+                        <strong>Art news</strong>
+                        <p>Performa Launches Online Platform for Streaming New and Archived Works</p>
+                    </li>
+                    <li>
+                        <strong>Art news</strong>
+                        <p>Performa Launches Online Platform for Streaming New and Archived Works</p>
+                    </li>
+                    <li>
+                        <strong>Art news</strong>
+                        <p>Performa Launches Online Platform for Streaming New and Archived Works</p>
+                    </li>
+                    <li>
+                        <strong>Art news</strong>
+                        <p>Performa Launches Online Platform for Streaming New and Archived Works</p>
+                    </li>
+                    <li>
+                        <strong>Art news</strong>
+                        <p>Performa Launches Online Platform for Streaming New and Archived Works</p>
+                    </li>
+                    <li>
+                        <strong>Art news</strong>
+                        <p>Performa Launches Online Platform for Streaming New and Archived Works</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
